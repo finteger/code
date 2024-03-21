@@ -45,7 +45,20 @@ class PhoneNumber {
 
 void main(){
   
-   var p = new PhoneNumber();
-   print(p.clean('613.995.0253'));
+  List<String> phoneNumbers = [
+'+1 (613)-995-0253',
+'613-995-0253',
+'1 613 995 0253',
+'613.995.0253'
+  ];
+  
+  
+ var p = new PhoneNumber();
+  
+  for(var i = 0; i < phoneNumbers.length; i++){
+  
+   print(p.clean(phoneNumbers[i]));
+    
+  }
  
 }
