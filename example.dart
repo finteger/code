@@ -42,3 +42,10 @@ class PhoneNumber {
   }
 }
 
+
+void main(){
+  
+   var p = new PhoneNumber();
+   print(p.clean('613.995.0253'));
+ 
+}
